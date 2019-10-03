@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>kukus calculator </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="output">
+            <div id="smallResult" data-previous-operand class="previousoperand"></div>
+            <div id="result" data-current-operand class="currentoperand"></div>
+        </div>
+        <button onclick="AC();document.getElementById('smallResult').innerHTML='';" data-all-clear class="AC , span-two">AC</button>
+        <button onclick= "del();">DEL</button>
+        <button onclick="operator(this.innerHTML);">÷</button>
+        <button onclick="number(this.innerHTML);">1</button>
+        <button onclick="number(this.innerHTML);">2</button>
+        <button onclick="number(this.innerHTML);">3</button>
+        <button onclick="operator(this.innerHTML);">+</button>
+        <button onclick="number(this.innerHTML);">4</button>
+        <button onclick="number(this.innerHTML);">5</button>
+        <button onclick="number(this.innerHTML);">6</button>
+        <button onclick="operator(this.innerHTML);">-</button>
+        <button onclick="number(this.innerHTML);">7</button>
+        <button onclick="number(this.innerHTML);">8</button>
+        <button onclick="number(this.innerHTML);">9</button>
+        <button onclick="operator(this.innerHTML);">*</button>
+        <button onclick="number(this.innerHTML);" class="span-two">0</button>
+        <button onclick="number(this.innerHTML);">.</button>
+        <button onclick="engine();">=</button>
+<!-- data-delete class="DEL " "del();document.getElementById('smallResult').innerHTML='';" -->
+
+
+    </div>
+    <script src="main.js"></script>
+    
+
+</body>
+
+</html>

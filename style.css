@@ -1,0 +1,76 @@
+/* youll have to come back to the css file ,make some finishing touches  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fce043;
+    background-image: linear-gradient(315deg, #fce043 0%, #fb7ba2 74%);
+    border-radius: 50px;
+}
+
+.calculator {
+    margin: 40px;
+    padding: 45px;
+    border: 10px;
+    display: grid;
+    /*align-content: center;*/
+    justify-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    /*grid-template-rows:  minmax(120px,auto) repeat(5,100px) */
+    ;
+    border-radius: 100px;
+    /* not working */
+}
+
+.calculator>button {
+    cursor: pointer;
+    border: 1px solid greenyellow;
+    background-color: rgba(255, 255, 255, .9);
+    outline: none;
+}
+
+.calculator>button:hover {
+    /* cool way of choosing child elements */
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.output {
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 10px solid peach;
+    /* get color */
+    color: white;
+    /* a little too white */
+    font-size: 1.2em;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+    word-wrap: break-word;
+    padding: 10px;
+    /* flex-wrap: wrap-reverse ;*/
+    /*word-break: break-all ; */
+}
+
+.output .previousoperand {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+}
+
+.output .currentoperand {
+    color: white;
+    font-size: 2.5rem;
+}
