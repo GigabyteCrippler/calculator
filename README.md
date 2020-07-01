@@ -2,7 +2,6 @@
 Calculator is a simple app written in HTML, CSS  and vanilla JS
 
 
-
 ## Features
 <ol>
 <li>Addition</li>
