@@ -1,5 +1,5 @@
 ## Calculator 
-Calculator is a simple app written in HTML, CSS  and vanilla JS (and ;love )
+Calculator is a simple app written in HTML, CSS  and vanilla JS (///)
 
 
 
